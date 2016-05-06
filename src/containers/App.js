@@ -1,9 +1,20 @@
 import 'styles/main';
 import React from 'react';
-import FeaturesContainer from './Features.container';
+import { Link } from 'react-router';
 
-export default () => (
-  <div className="page">
-    <FeaturesContainer />
-  </div>
-);
+class App extends React.Component {
+   render() {
+      return (
+         <div className="app">
+            <Link to="/">Samuel Clovis</Link>
+            <ul className="nav">
+               <li><Link to="/dualscape">dualscape</Link></li>
+            </ul>
+
+            {this.props.children}
+         </div>
+      );
+   }
+};
+
+export default App;
