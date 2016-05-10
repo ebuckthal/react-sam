@@ -1,6 +1,7 @@
 @font-face {
    font-family: 'Akkurat';
    src: url('~fonts/AKKURAT-Mono.woff') format('woff');
+   src: url('~fonts/AKKURAT-Mono.otf') format('otf');
 }
 
 body {
@@ -8,7 +9,7 @@ body {
   padding: 0;
 
   font-family: 'Akkurat', monospace;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 145%;
 }
 

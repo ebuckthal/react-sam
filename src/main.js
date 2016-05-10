@@ -1,7 +1,7 @@
 import { Provider } from 'react-redux';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, hashHistory } from 'react-router';
+import { Router, Route, browserHistory } from 'react-router';
 import App from 'containers/App';
 import Home from 'containers/Home';
 import Dualscape from 'containers/projects/Dualscape';
@@ -11,7 +11,7 @@ import Store from './store';
 
 ReactDOM.render(
    <Provider store={ Store() }>
-      <Router history={ hashHistory } >
+      <Router history={ browserHistory } >
          <Route path="/" component={ App }>
             <Route path="/dualscape" component={ Dualscape } />
             <Route path="/17th-street" component={ SeventeenthStreet } />

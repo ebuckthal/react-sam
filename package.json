@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "node_modules/.bin/rimraf build/",
     "build": "npm run clean && node_modules/.bin/webpack --config webpack/production.config.babel.js",
-    "dev-server": "node_modules/.bin/webpack-dev-server --config webpack/development.config.babel.js",
+    "dev-server": "node_modules/.bin/webpack-dev-server --inline --content-base . --history-api-fallback --config webpack/development.config.babel.js",
     "start": "npm run build && node_modules/.bin/http-server build/ -p 9999 -o",
     "test": "node_modules/.bin/mocha --compilers js:babel-register --recursive tests/"
   },
