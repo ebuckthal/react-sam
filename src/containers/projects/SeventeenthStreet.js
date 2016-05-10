@@ -2,6 +2,7 @@ import React from 'react';
 
 export default () => (
    <div className="page project 17th-street">
+   <p>17TH STREET</p>
    <p>
       SITE: MANHATTAN, NEW YORK
       <br />

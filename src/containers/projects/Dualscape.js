@@ -2,6 +2,7 @@ import React from 'react';
 
 export default () => (
    <div className="page project dualscape">
+      <p>DUALSCAPE</p>
       <p>IN COLLABORATION WITH MASON HAYES</p>
       <p>
          SITE: ST. CROIX, VIRGIN ISLANDS

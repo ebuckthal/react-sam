@@ -8,7 +8,7 @@ body {
   padding: 0;
 
   font-family: 'Akkurat', monospace;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 145%;
 }
 
@@ -21,6 +21,22 @@ body {
   }
 }
 
+.project {
+   p.caption {
+      color: #888;
+      margin-top: 0;
+      padding-top: 0;
+   }
+
+   ul.references {
+      list-style: none;
+      padding-left: 0;
+      li {
+         color: #888;
+      }
+   }
+}
+
 .nav {
    position: absolute;
    top: 0;
@@ -30,8 +46,12 @@ body {
 
    list-style: none;
 
-   .home {
+   li.home {
       padding-bottom: 10px;
+   }
+
+   li.hidden {
+      visibility: hidden;
    }
 
    a {

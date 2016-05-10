@@ -9,6 +9,10 @@
 
    overflow: hidden;
 
+   &.hidden {
+      visibility: hidden;
+   }
+
    img {
       position: absolute;
       top: 0;

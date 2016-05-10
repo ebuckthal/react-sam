@@ -18,11 +18,14 @@ class App extends React.Component {
       <li className="home">
          <IndexLink activeClassName="active" to="/">samuel-clovis.home</IndexLink>
       </li>
-      { this.props.projects.map((project, index) => (
-               <li key={ index }><ProjectLink
-                  to={ project.url }>
-                  { project.title }
-               </ProjectLink></li>
+      { this.props.projects.map(({ title, url, visible }, index) => (
+               <li key={ index }
+                  className={ ( !visible ? 'hidden' : '') }>
+                  <ProjectLink
+                     to={ url }>
+                     { title }
+                     </ProjectLink>
+                  </li>
       ))}
       </ul>
             {this.props.children || <Home />}

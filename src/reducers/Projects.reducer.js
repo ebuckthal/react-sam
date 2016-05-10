@@ -32,8 +32,8 @@ export const getTitleWithTags = (title, tags) => {
 };
 
 export const getVisibleProjects = (projects, filters) => {
-   return projects.filter((project) => {
-         return isProjectVisible(project, filters);
+   return projects.map((project) => {
+         return {...project, visible: isProjectVisible(project, filters) }
    });
 };
 
