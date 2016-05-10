@@ -11,14 +11,20 @@ body {
   font-family: 'Akkurat', monospace;
   font-size: 11px;
   line-height: 145%;
+  -webkit-font-smoothing: antialiased; // For improved readability on Webkit
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .page {
   width: 600px;
   margin-left: 340px;
 
+  &.project {
+     width: 800px;
+  }
+
   img {
-     width: 600px;
+     width: 800px;
   }
 }
 
@@ -56,10 +62,19 @@ body {
    }
 
    a {
+      position: relative;
       color: black;
       text-decoration: none;
    }
-   a.active {
-      text-decoration: underline;
+   a.active::before {
+      content: '➭';
+      display: block;
+      position: absolute;
+      left: -14px;
+      top: 1px;
+
+      font-size: 150%;
+
+      font: serif, sans-serif;
    }
 }
