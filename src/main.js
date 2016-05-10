@@ -6,6 +6,7 @@ import App from 'containers/App';
 import Home from 'containers/Home';
 import Dualscape from 'containers/projects/Dualscape';
 import SeventeenthStreet from 'containers/projects/SeventeenthStreet';
+import CollectiveAuthorship from 'containers/projects/CollectiveAuthorship';
 import Store from './store';
 
 ReactDOM.render(
@@ -14,6 +15,7 @@ ReactDOM.render(
          <Route path="/" component={ App }>
             <Route path="/dualscape" component={ Dualscape } />
             <Route path="/17th-street" component={ SeventeenthStreet } />
+            <Route path="/collective-authorship" component={ CollectiveAuthorship } />
          </Route>
       </Router>
    </Provider>,

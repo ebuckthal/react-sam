@@ -8,7 +8,7 @@ export const initialState = [
 ];
 
 /**
- * VisibilityFilter 
+ * VisibilityFilter
  *
  * @param {Array}  state
  * @param {Object} action
@@ -16,9 +16,6 @@ export const initialState = [
  * @return {Array}
  */
 export function VisibilityFilter(state = initialState, action) {
-
-   console.log(action);
-   console.log(state);
 
    switch (action.type) {
 

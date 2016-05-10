@@ -2,10 +2,15 @@ import './button.scss';
 import React from 'react';
 
 export default ({ text, active, onClick }) => {
-   return <a 
-      href='#' 
-      onClick={ onClick } 
-      className={'filter-button ' + (active ? 'active' : '')}>
+   return (<label>
+      <input
+      className={'filter-button ' + (active ? 'active' : '')}
+      type="checkbox"
+      checked={ active }
+      readOnly={true}
+      onClick={ onClick } />
+
       { text }
-   </a>
+
+   </label>);
 };
