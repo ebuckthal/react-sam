@@ -1,0 +1,9 @@
+.filter-button {
+   text-decoration: none;
+   color: gray;
+   margin-left: 15px;
+
+   &.active {
+      color: black;
+   }
+}

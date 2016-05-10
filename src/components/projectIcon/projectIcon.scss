@@ -1,0 +1,19 @@
+.project-icon {
+   display: inline-block;
+   position: relative;
+
+   height: 200px;
+   width: 200px;
+
+   margin: 5px;
+
+   overflow: hidden;
+
+   img {
+      position: absolute;
+      top: 0;
+      left: -80px;
+      height: 200px;
+      width: auto;
+   }
+}

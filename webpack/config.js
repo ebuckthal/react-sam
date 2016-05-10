@@ -17,6 +17,11 @@ export const CONFIG = {
        */
 
       loaders: [
+
+         { 
+            test: /\.(otf|woff|woff2|eot|ttf)$/, 
+            loader: 'url-loader?limit=10000' 
+         },
          {
             test: /\.(png|jpg)$/,
             loaders: [
@@ -24,7 +29,11 @@ export const CONFIG = {
                "img?minimize&optimizationLevel=7"
             ]
          },
-         { test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
+         { 
+            test: /\.js$/, 
+            loader: 'babel', 
+            exclude: /node_modules/ 
+         },
          {
             test: /\.scss$/,
             loader: ExtractTextPlugin.extract('style', 'css?minimize!sass'),
@@ -51,7 +60,8 @@ export const CONFIG = {
          reducers: `${ APP_PATH }/reducers`,
          containers: `${ APP_PATH }/containers`,
          styles: `${ APP_PATH }/assets/styles`,
-         images: `${ APP_PATH }/assets/images`
+         images: `${ APP_PATH }/assets/images`,
+         fonts: `${ APP_PATH }/assets/fonts`
       }
    },
 

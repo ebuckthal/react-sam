@@ -1,7 +1,10 @@
 import React from 'react';
+import FilterBarContainer from 'containers/Filter.container';
+import ProjectGridContainer from 'containers/ProjectGrid.container';
 
 export default () => (
-   <div class="home">
-      <h1>Samuel Clovis</h1>
+   <div className="page home">
+      <FilterBarContainer />
+      <ProjectGridContainer />
    </div>
 );
