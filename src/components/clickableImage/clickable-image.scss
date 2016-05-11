@@ -1,0 +1,10 @@
+.clickable-image {
+   margin: 35px 0;
+
+   .caption {
+      color: #888;
+   }
+
+   & + .clickable-image {
+   }
+}

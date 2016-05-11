@@ -110,7 +110,9 @@ body {
 
       position: absolute;
       left: -10px;
-      top: 0;
+      top: 1px;
+
+      font-size: 7px;
 
       /* use !important to prevent issues with browser extensions that change fonts */
       font-family: 'icomoon' !important;
