@@ -1,3 +1,15 @@
 .filter-button {
-   margin-right: 10px;
+   position: relative;
+   margin-right: 15px;
+
+   text-decoration: none;
+   color: black;
+
+   padding-left: 12px;
+
+   span {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+   }
 }

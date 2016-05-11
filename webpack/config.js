@@ -18,9 +18,9 @@ export const CONFIG = {
 
       loaders: [
 
-         { 
-            test: /\.(otf|woff|woff2|eot|ttf)$/, 
-            loader: 'url-loader?limit=10000' 
+         {
+            test: /\.(svg|otf|woff|woff2|eot|ttf)$/,
+            loader: 'url-loader?limit=10000'
          },
          {
             test: /\.(png|jpg)$/,
@@ -29,10 +29,10 @@ export const CONFIG = {
                "img?minimize&optimizationLevel=7"
             ]
          },
-         { 
-            test: /\.js$/, 
-            loader: 'babel', 
-            exclude: /node_modules/ 
+         {
+            test: /\.js$/,
+            loader: 'babel',
+            exclude: /node_modules/
          },
          {
             test: /\.scss$/,

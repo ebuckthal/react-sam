@@ -14,10 +14,10 @@ class App extends React.Component {
    render() {
       return (
          <div className="app">
-      <ul className="nav">
-      <li className="home">
-         <IndexLink activeClassName="active" to="/">samuel-clovis.home</IndexLink>
-      </li>
+         <ul className="nav">
+         <li className="home">
+            <IndexLink activeClassName="active" to="/">samuel-clovis.home</IndexLink>
+         </li>
       { this.props.projects.map(({ title, url, visible }, index) => (
                <li key={ index }
                   className={ ( !visible ? 'hidden' : '') }>

@@ -3,17 +3,11 @@ import React from 'react';
 
 export default ({ text, active, onClick }) => {
    return (
-         <label
-         className={'filter-button ' + (active ? 'active' : '')}>
-
-         <input
-         type="checkbox"
-         checked={ active }
-         readOnly={true}
-         onClick={ onClick } />
-
-         { text }
-
-         </label>
+      <a href="#"
+      className="filter-button"
+      onClick={ onClick }>
+      <span className={ active ? "icon-check-square-o" : "icon-square-o" }></span>
+            { text }
+         </a>
       );
 };
