@@ -111,9 +111,14 @@ body {
 
       position: absolute;
       left: -10px;
-      bottom: 3px;
+      bottom: 0;
 
-      font-size: 7px;
+      //font-size: 7px;
+
+      height: 100%;
+      line-height: 100%; 
+
+      transform: scale(0.75);
 
       /* use !important to prevent issues with browser extensions that change fonts */
       font-family: 'icomoon' !important;
@@ -122,7 +127,6 @@ body {
       font-weight: normal;
       font-variant: normal;
       text-transform: none;
-      line-height: 1;
 
       /* Better Font Rendering =========== */
       -webkit-font-smoothing: antialiased;
