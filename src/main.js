@@ -21,3 +21,10 @@ ReactDOM.render(
    </Provider>,
    document.getElementById('root')
 );
+
+var i = 0;
+var bg_colors = ['magenta', 'yellow', 'cyan'];
+var bg_interval = window.setInterval(function() { 
+      i = (++i % bg_colors.length);
+      document.body.style.backgroundColor = bg_colors[i];
+}, 250);
